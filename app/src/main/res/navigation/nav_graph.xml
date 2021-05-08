@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <activity
+        android:id="@+id/FTUE"
+        android:name="com.troyanos.airelibreapp.FTUE"
+        android:label="activity_f_t_u_e"
+        tools:layout="@layout/activity_f_t_u_e" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.troyanos.airelibreapp.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contacto"
+        android:name="com.troyanos.airelibreapp.Contacto"
+        android:label="fragment_contacto"
+        tools:layout="@layout/fragment_contacto" >
+        <action
+            android:id="@+id/action_contacto_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/about"
+        android:name="com.troyanos.airelibreapp.About"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_about_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.troyanos.airelibreapp.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_contacto"
+            app:destination="@id/contacto" />
+        <action
+            android:id="@+id/action_menuFragment_to_about"
+            app:destination="@id/about" />
+        <action
+            android:id="@+id/action_menuFragment_to_FTUE"
+            app:destination="@id/FTUE" />
+    </fragment>
+</navigation>
