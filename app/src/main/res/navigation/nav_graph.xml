@@ -18,24 +18,9 @@
         <action
             android:id="@+id/action_mainFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/contacto"
-        android:name="com.troyanos.airelibreapp.Contacto"
-        android:label="fragment_contacto"
-        tools:layout="@layout/fragment_contacto" >
         <action
-            android:id="@+id/action_contacto_to_menuFragment"
-            app:destination="@id/menuFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/about"
-        android:name="com.troyanos.airelibreapp.About"
-        android:label="fragment_about"
-        tools:layout="@layout/fragment_about" >
-        <action
-            android:id="@+id/action_about_to_menuFragment"
-            app:destination="@id/menuFragment" />
+            android:id="@+id/action_mainFragment_to_espaciosFragment"
+            app:destination="@id/espaciosFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
@@ -46,13 +31,61 @@
             android:id="@+id/action_menuFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
         <action
-            android:id="@+id/action_menuFragment_to_contacto"
-            app:destination="@id/contacto" />
-        <action
-            android:id="@+id/action_menuFragment_to_about"
-            app:destination="@id/about" />
-        <action
             android:id="@+id/action_menuFragment_to_FTUE"
             app:destination="@id/FTUE" />
+        <action
+            android:id="@+id/action_menuFragment_to_espaciosFragment"
+            app:destination="@id/espaciosFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_sobreFragment"
+            app:destination="@id/sobreFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/espaciosFragment"
+        android:name="com.troyanos.airelibreapp.EspaciosFragment"
+        android:label="fragment_espacios"
+        tools:layout="@layout/fragment_espacios" >
+        <action
+            android:id="@+id/action_espaciosFragment_to_mainFragment3"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_espaciosFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.troyanos.airelibreapp.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sobreFragment"
+        android:name="com.troyanos.airelibreapp.SobreFragment"
+        android:label="fragment_sobre"
+        tools:layout="@layout/fragment_sobre" >
+        <action
+            android:id="@+id/action_sobreFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.troyanos.airelibreapp.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_contactFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
 </navigation>

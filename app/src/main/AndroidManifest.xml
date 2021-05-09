@@ -23,18 +23,20 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <activity android:label="@string/app_name" android:name=".FTUE" />
 
-        <activity android:label="@string/app_name" android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:label="@string/app_name" android:name=".FTUE" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+        <activity android:label="@string/app_name" android:name=".MainActivity"/>
+
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCFo9GMs02UGScWw1uAKl1NEmxNlC66Zbk" />
+            android:value="AIzaSyDkGLbeyt7DFTP-bdBKMR07oUN_R8buYH4" />
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />

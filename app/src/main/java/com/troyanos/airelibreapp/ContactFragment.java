@@ -2,18 +2,21 @@ package com.troyanos.airelibreapp;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Contacto#newInstance} factory method to
+ * Use the {@link ContactFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Contacto extends Fragment {
+public class ContactFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +27,7 @@ public class Contacto extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Contacto() {
+    public ContactFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +37,11 @@ public class Contacto extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Contacto.
+     * @return A new instance of fragment ContactFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static Contacto newInstance(String param1, String param2) {
-        Contacto fragment = new Contacto();
+    public static ContactFragment newInstance(String param1, String param2) {
+        ContactFragment fragment = new ContactFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -62,3 +65,39 @@ public class Contacto extends Fragment {
         return inflater.inflate(R.layout.fragment_contact, container, false);
     }
 }
+
+
+
+
+
+/*package com.troyanos.airelibreapp;
+
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.AdapterView;
+        import android.widget.ArrayAdapter;
+        import android.widget.AutoCompleteTextView;
+        import android.widget.Spinner;
+        import android.widget.Toast;
+
+        import androidx.appcompat.app.AppCompatActivity;
+        import androidx.fragment.app.Fragment;
+
+public class ContactoFragment extends AppCompatActivity {
+
+    AutoCompleteTextView autoCompleteTextView;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment_contacto);
+
+        autoCompleteTextView=findViewById(R.id.opciones);
+        String [] opciones = {"Dar feedback de un espacio", "Sugerir mejora a un espacio",
+                "Dar feedback de la aplicación", "Reportar un problema"};
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, R.layout.option_item);
+        autoCompleteTextView.setText(arrayAdapter.getItem(0).toString(), false);
+        autoCompleteTextView.setAdapter(arrayAdapter);
+    }
+}*/

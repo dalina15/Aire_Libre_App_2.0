@@ -16,7 +16,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/img_Foto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
@@ -37,65 +37,76 @@
                 app:layout_constraintTop_toBottomOf="@+id/divider">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btn_Lista_De_Espacio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/menu_buttons_margin"
                     android:layout_marginBottom="@dimen/menu_buttons_margin"
                     android:background="@color/primary"
-                    android:text="@string/menu_item1"
+                    android:text="@string/Espacios"
                     app:backgroundTint="@color/primary" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/btn_MisSitios"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/menu_buttons_margin"
                     android:layout_marginBottom="@dimen/menu_buttons_margin"
                     android:background="@color/primary"
-                    android:text="@string/menu_item2"
+                    android:text="@string/MisSitios"
                     app:backgroundTint="@color/primary" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/btn_Ajustes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/menu_buttons_margin"
                     android:layout_marginBottom="@dimen/menu_buttons_margin"
                     android:background="@color/primary"
-                    android:text="@string/menu_item3"
+                    android:text="@string/Ajustes"
                     app:backgroundTint="@color/primary" />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/btn_Contacto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/menu_buttons_margin"
                     android:layout_marginBottom="@dimen/menu_buttons_margin"
                     android:background="@color/primary"
-                    android:text="@string/menu_item4"
+                    android:text="@string/Contacto"
                     app:backgroundTint="@color/primary" />
+
+                <Button
+                    android:id="@+id/btn_Sobre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/menu_buttons_margin"
+                    android:layout_marginBottom="@dimen/menu_buttons_margin"
+                    android:background="@color/primary"
+                    android:text="@string/About"
+                    app:backgroundTint="@color/primary" />
+
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tv_usuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="TextView"
+                android:text="@string/Nombre"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                app:layout_constraintTop_toBottomOf="@+id/img_Foto" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/tv_TipoMembresia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="TextView"
+                android:text="@string/Membresia"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_usuario" />
 
             <View
                 android:id="@+id/divider"
@@ -103,7 +114,7 @@
                 android:layout_height="1dp"
                 android:layout_marginTop="20dp"
                 android:background="?android:attr/listDivider"
-                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_TipoMembresia"
                 tools:layout_editor_absoluteX="0dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 

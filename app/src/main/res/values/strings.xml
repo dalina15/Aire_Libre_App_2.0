@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Aire Libre</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -11,6 +12,7 @@
     <string name="login_failed">"Login failed"</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
     <!-- Strings related to Buttons and Fields -->
     <string name="usuario">Nombre de Usuario</string>
     <string name="ingresar">Ingresar</string>
@@ -31,19 +33,47 @@
     <string name="premium">Prémium</string>
     <string name="gratuito">Gratuito</string>
     <string name="config">Preferencias</string>
+
     <!-- Strings related to Menu -->
-    <string name="menu_item1">Mis Sitios</string>
-    <string name="menu_item2">Ajustes</string>
-    <string name="menu_item3">Contacto</string>
-    <string name="menu_item4">Sobre</string>
+    <string name="MisSitios">Mis Sitios</string>
+    <string name="Ajustes">Ajustes</string>
+    <string name="Contacto">Contacto</string>
+    <string name="About">Sobre</string>
+    <string name="Nombre">Nombre de usuario</string>
+    <string name="Membresia">Tipo de membresía</string>
+    <string name="Espacios">Espacios</string>
+    <string name="MisSitios2">Eres parte de nuestra Elite de Miembros</string>
+
+
     <!-- Strings related to About -->
-    <string name="Giepal">GIEPAL</string>
-    <string name="About_title">Sobre Aire Libre</string>
-    <string name="About_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales mauris quis accumsan eleifend. Quisque varius ex augue, sit amet rhoncus tortor molestie nec. Pellentesque laoreet augue sit amet tortor dapibus consequat...</string>
-    <string name="Credit_title">Créditos</string>
-    <string name="Credit_item1">Andrés</string>
-    <string name="Credit_item2">Nadia Duera</string>
-    <string name="Credit_item3">Martín Hernández</string>
-    <string name="Credit_item4">Atilio</string>
-    <string name="Credit_item5">Nico</string>
+    <string name="Giepal">by GIEPAL Team</string>
+    <string name="Titulo">Sobre Aire Libre</string>
+    <string name="Sobre">Aire Libre es una plataforma online que promueve "salir del encierro" mediante la realización de actividades al aire libre, brindando a un solo touch las posibilidades más diversas para la realización de las mismas en espacios públicos y áreas de esparcimiento, accediendo fácilmente a la ubicación de gimnasios al aire libre, bicisendas, eventos culturales,
+canchas, pistas, running, plazas accesibles, y el extra de contar con los descuentos de sponsors para usuarios registrados. </string>
+    <string name="Creditos">Créditos</string>
+    <string name="Miembro1">Andrés Rosadilla</string>
+    <string name="Miembro2">Nadia Duera</string>
+    <string name="Miembro3">Martín Hernández</string>
+    <string name="Miembro4">Atilio Gómez</string>
+    <string name="Miembro5">Nicolás Berriel</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings related to Contacto -->
+    <string name="Contacto1">Formulario de Contacto</string>
+    <string name="Seleccion">Selecciona la opción que aplique</string>
+    <string name="Descripcion">Escriba aquí su comentario</string>
+    <string name="Requerido">*Requerido</string>
+    <string name="Enviar">Enviar</string>
+    <string name="Cancelar">Cancelar</string>
+
+    <!-- Strings related to Perfil -->
+    <string name="usuario2">Usuario: Batman</string>
+    <string name="Nombre1">Nombre: Bruce Wayne</string>
+    <string name="Cambiar_Contrasena">Cambiar contraseña</string>
+    <string name="Correo">Correo electrónico: notbatman@justkidding.com</string>
+    <string name="Municipio">Municipio: B</string>
+    <string name="Favoritos">Favoritos</string>
+    <string name="Plaza_1">Plaza Liber Seregni</string>
+    <string name="Plaza_2">Plaza de los 33 Orientales</string>
+    <string name="Toast_ajustes">Puedes cambiar tu nombre de usuario en 14 días</string>
 </resources>

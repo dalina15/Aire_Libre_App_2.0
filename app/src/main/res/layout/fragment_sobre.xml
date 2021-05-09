@@ -11,44 +11,51 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tv_titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/About_title"
+            android:text="@string/Titulo"
             android:textSize="@dimen/title_text_size"
+            android:layout_marginTop="33dp"
             tools:layout_editor_absoluteX="128dp"
-            tools:layout_editor_absoluteY="204dp" />
+            tools:layout_editor_absoluteY="204dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Logo"/>
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tv_sobre"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="33dp"
-            android:text="@string/About_body"
+            android:text="@string/Sobre"
             android:textSize="@dimen/text_size"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_titulo" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tv_creditos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="86dp"
-            android:text="@string/Credit_title"
+            android:text="@string/Creditos"
             android:textSize="@dimen/title_text_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_sobre" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/tv_giepal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="41dp"
-            android:text="TextView"
+            android:text="@string/Giepal"
             android:textSize="@dimen/text_size"
-            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_creditos"
             tools:layout_editor_absoluteX="176dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -72,13 +79,20 @@
             app:layout_constraintVertical_bias="0.962"
             app:tint="@android:color/white" />
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="172dp"
-            tools:layout_editor_absoluteY="108dp" />
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="147dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitEnd"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/aire_libre_logo"
+            tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
