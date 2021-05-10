@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
         SobreFragment = new SobreFragment();
 
 
-        getSupportFragmentManager().beginTransaction().add(R.id.FTUE, MainFragment).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment, MainFragment).commit();
     }
     public void onClick (View view) {
-        transaction=getSupportFragmentManager().beginTransaction();
+        transaction = getSupportFragmentManager().beginTransaction();
         switch (view.getId()) {
             case R.id.btn_Lista_De_Espacio:
                 transaction.replace(R.id.mainFragment, EspaciosFragment);
@@ -62,8 +62,7 @@ public class MainActivity extends AppCompatActivity {
         /*if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.container, MainFragment.newInstance())
-                    .commitNow();
-        }*/
+                    .commitNow(); }*/
 
 
     }
